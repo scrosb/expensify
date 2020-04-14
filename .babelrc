@@ -1,0 +1,7 @@
+//define the babel presets whenever the proect runs babel use these 2 presets
+{
+  "presets":["env", "react"],
+  //allows you to remove the constructor function and use arrow functions in class properties
+  //maintain the 'this' binding for arrow functions
+  "plugins":["transform-class-properties", "transform-object-rest-spread"]
+}
