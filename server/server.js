@@ -11,6 +11,4 @@ app.get('*', (req, res) => {
 
 const port = 3000 || process.env.PORT;
 
-app.listen(port, () => {
-    console.log('hello from port')
-});
+app.listen(process.env.PORT);
