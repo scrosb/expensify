@@ -9,5 +9,8 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
 
+const port = 3000 || process.env.PORT;
 
-app.listen((process.env.PORT));
+app.listen(port, () => {
+    console.log('hello from port')
+});
