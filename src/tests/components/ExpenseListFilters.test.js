@@ -16,7 +16,7 @@ beforeEach(() => {
   <ExpenseListFilters
     filters={filters}
     setTextFilter={setTextFilter}
-    sortByDate={sortByDate}
+    sortByDate={sortByDate} 
     sortByAmount={sortByAmount}
     setStartDate={setStartDate}
     setEndDate={setEndDate}
