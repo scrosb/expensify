@@ -6,7 +6,7 @@ import numeral from 'numeral';
 
 
 // numeral(amount / 100).format('$0,0.00')
-export class ExpenseSummary extends React.Component {
+export class ExpensesSummary extends React.Component {
   //expense count
   //expenses total
   render(){
@@ -26,4 +26,4 @@ const mapStateToProps = (state) => {
   };
 }
 
-export default connect(mapStateToProps)(ExpenseSummary);
+export default connect(mapStateToProps)(ExpensesSummary);
