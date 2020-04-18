@@ -69,7 +69,19 @@ test('should not edit expense if expense not found', () => {
 });
 
 
+test('should set expenses', () => { 
 
+  //The whole purpose of set expenses it to return expenses already in the database,
+  //so you pull the expenses from firebase, then set the state by 
+  //returning just the expenses, and not the inital state
+  const action = {
+    type: 'SET_EXPENSES',
+    expenses:[expenses[1]]
+  }
+  const state = expensesReducer(expenses, action);
+
+  expect(state).toEqual([expenses[1]]);
+})
 
 
 
