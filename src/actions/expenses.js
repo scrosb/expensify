@@ -74,6 +74,26 @@ export const editExpense = (id, updates) => ({
   updates
 });
 
+
+//startEditExpense
+
+export const startEditExpense = (id, updates) => {
+  return dispatch => {
+    return database.ref(`expenses/${id}`).update(updates).then(() => {
+      dispatch(editExpense(id, updates));
+    })
+    // database.ref().update({
+    //   'job/company':'Amazon',
+    //   stressLevel:9,
+    //   'location/city':'Seattle'
+    // }).then(() => {
+    //   console.log('company, city, stress updated')
+    // }).catch((e) => {
+    //   console.log('Errors: ', e);
+    // })
+  }
+}
+
 //SET_EXPENSES
 
 export const setExpenses = (expenses) => ({

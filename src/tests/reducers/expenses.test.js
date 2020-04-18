@@ -13,6 +13,8 @@ test('should remove expense by Id', () => {
     id: expenses[1].id
   }
 
+  
+
   const state = expensesReducer(expenses,action);
   expect(state).toEqual([expenses[0],expenses[2]]);
 })
