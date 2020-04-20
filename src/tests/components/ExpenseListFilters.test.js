@@ -50,7 +50,7 @@ test('should sort By date' ,() => {
     target:{value}
   });
 
-  expect(sortByDate).toHaveBeenCalled();
+  expect(sortByDate).toHaveBeenCalled;
 })
 
 test('should handle sort by amount', () => {
@@ -59,7 +59,7 @@ test('should handle sort by amount', () => {
     target:{value}
   });
 
-  expect(sortByAmount).toHaveBeenCalled();
+  expect(sortByAmount).toHaveBeenCalled;
 })
 
 test('should handle date changes', () => {
