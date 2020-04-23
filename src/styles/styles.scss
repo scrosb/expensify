@@ -1,6 +1,17 @@
-@import 'base/settings';
-@import 'base/base';
-
+@import './base/settings';
+@import './components/button';
+@import './components/header';
+@import './base/base';
+@import './components/box-layout.scss';
+@import './components/content-container.scss';
+@import './components/page-header.scss';
+@import './components/input-group.scss';
+@import './components/inputs';
+@import './components/form';
+@import './components/visibility';
+@import './components/list';
+@import './components/loader';
+ 
 // .form-div {
 //   display: flex;
 //   justify-content: space-between;

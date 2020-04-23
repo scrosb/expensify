@@ -1,4 +1,7 @@
 //rems
+*{
+  box-sizing: border-box;
+}
 
 html{
   //change rems to base 10
@@ -7,9 +10,12 @@ html{
 
 
 body{
+  color: $dark-grey;
   font-family: Helvetica, Arial, sans-serif;
   font-size: $m-size;
-  background: white
+  background: white;
+  //adjust space between paragraphs
+  line-height: 1.6
 }
 
 button {
